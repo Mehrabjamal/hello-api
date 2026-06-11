@@ -9,6 +9,12 @@ app.get("/", (_req, res) => {
   });
 });
 
+app.get("/welcome", (_req, res) => {
+  res.json({
+    message: "Welcome to this demo project"
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
